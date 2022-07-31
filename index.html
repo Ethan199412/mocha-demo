@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mocha Tests</title>
+    <link rel="icon" href="https://mochajs.org/static/favicon.copy.f17f048f84.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <!-- 保留mocha.js, chai.js在测试模块使用时引入 -->
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+    <script src="http://localhost:3006/dist/bundle.js" defer></script>
+    <script class="mocha-init">
+      mocha.setup('bdd');
+      // mocha.allowUncaught();
+      // mocha.checkLeaks();
+    </script>
+  </body>
+</html>
