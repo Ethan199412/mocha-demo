@@ -11,11 +11,14 @@
     <div id="mocha"></div>
     <!-- 保留mocha.js, chai.js在测试模块使用时引入 -->
     <script src="https://unpkg.com/mocha/mocha.js"></script>
-    <script src="http://localhost:3006/dist/bundle.js" defer></script>
     <script class="mocha-init">
       mocha.setup('bdd');
       // mocha.allowUncaught();
       // mocha.checkLeaks();
+    </script>
+    <script src="http://localhost:3006/dist/bundle.js"></script>
+    <script>
+      mocha.run()
     </script>
   </body>
 </html>
